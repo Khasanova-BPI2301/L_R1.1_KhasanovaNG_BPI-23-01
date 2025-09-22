@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\obj\Debug\net8.0-windows\
+C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\obj\Release\net8.0-windows\
 L_R1._1_Khasanova
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\App.xaml
 11407045341
 
-51078978309
+51939919617
 1981451641563
 MainWindow.xaml;
 
