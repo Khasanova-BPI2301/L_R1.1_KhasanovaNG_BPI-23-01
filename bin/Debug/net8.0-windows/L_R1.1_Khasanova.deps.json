@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "L_R1.1_Khasanova/1.0.0": {
+        "runtime": {
+          "L_R1.1_Khasanova.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "L_R1.1_Khasanova/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
