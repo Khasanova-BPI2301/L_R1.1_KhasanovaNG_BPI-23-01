@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("L_R1.1_Khasanova")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb7194b7c7f50bf247c5a314958c9455744156d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa6e1c13ce29c03296b4558afdd148fd82e5802c")]
 [assembly: System.Reflection.AssemblyProductAttribute("L_R1.1_Khasanova")]
 [assembly: System.Reflection.AssemblyTitleAttribute("L_R1.1_Khasanova")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
