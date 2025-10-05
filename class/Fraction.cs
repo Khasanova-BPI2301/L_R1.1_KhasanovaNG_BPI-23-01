@@ -19,7 +19,11 @@ namespace L_R1._1_Khasanova
         public int Denominator
         { 
             get { return denominator; }
-            set { denominator = value; }
+            set 
+            { 
+                if (value !=0)
+                denominator = value;
+            }
         }
 
     }
