@@ -26,4 +26,11 @@ namespace L_R1._1_Khasanova
             }
         }
 
+        public Fraction(int numerator, int denominator)
+        {
+            Numerator = numerator;
+            Denominator = denominator;
+        }
     }
+
+   
