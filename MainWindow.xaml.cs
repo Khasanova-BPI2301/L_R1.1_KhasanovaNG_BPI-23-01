@@ -21,7 +21,7 @@ namespace L_R1._1_Khasanova
             InitializeComponent();
         }
 
-        // Проверка ввода числа
+        // Проверка ввода числа. обработчик
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             if (!char.IsDigit(e.Text, 0) && e.Text != "-")
@@ -29,7 +29,45 @@ namespace L_R1._1_Khasanova
 
                 e.Handled = true;
             }
-            
+
+        }
+        //Обработчик проверки пробела
+        private void TextBox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Space)
+            {
+                e.Handled = true;
+            }
+        }
+        //Обработчик кнопки процентов
+        private void CalculatePercentage_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int numerator = int.Parse(numeratorTextBox.Text);
+                int denominator = int.Parse(denominatorTextBox.Text);
+
+                if (denominator == 0)
+                {
+                    resultTextBox.Text = "Ошибка: знаменатель не может быть равен нулю!";
+                    return;
+                }
+                Fraction fraction = new Fraction(numerator, denominator);
+
+                double percentage = fraction.ToPercentage();
+                resultTextBox.Text = $"{percentage:F2}%";
+            }
+            catch (FormatException)
+            {
+                resultTextBox.Text = "Ошибка: введите корректные числа!";
+            }
+            catch (Exception ex)
+            {
+                resultTextBox.Text = $"Ошибка:{ex.Message}";
+
+
+            }
+
         }
     }
 }
