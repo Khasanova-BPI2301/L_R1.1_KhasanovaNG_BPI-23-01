@@ -45,6 +45,13 @@ namespace L_R1._1_Khasanova
         {
             int sum = 0;
             int temp = Math.Abs(Denominator);
+
+            while (temp > 0)
+            {
+                sum += temp % 10;
+                temp /= 10;
+            }
+            return sum;
         }
         
         
