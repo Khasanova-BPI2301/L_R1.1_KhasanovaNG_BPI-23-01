@@ -17,12 +17,12 @@ namespace L_R1._1_Khasanova
             set { numerator = value; }
         }
         public int Denominator
-        { 
+        {
             get { return denominator; }
-            set 
-            { 
-                if (value !=0)
-                denominator = value;
+            set
+            {
+                if (value != 0)
+                    denominator = value;
             }
         }
 
@@ -41,7 +41,17 @@ namespace L_R1._1_Khasanova
 
         //Функция-метод 2: Найти сумму цифр значения знаменателя
 
-
+        public int SumOfDenominatorDigits()
+        {
+            int sum = 0;
+            int temp = Math.Abs(Denominator);
+        }
+        
+        
+        
+                 
+        
+          
     }
 
     
