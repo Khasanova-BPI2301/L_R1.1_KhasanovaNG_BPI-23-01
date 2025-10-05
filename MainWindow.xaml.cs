@@ -21,4 +21,16 @@ namespace L_R1._1_Khasanova
             InitializeComponent();
         }
 
-        
+        // Проверка ввода числа
+        private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsDigit(e.Text, 0) && e.Text != "-")
+            {
+
+                e.Handled = true;
+            }
+            
+        }
+    }
+}
+
