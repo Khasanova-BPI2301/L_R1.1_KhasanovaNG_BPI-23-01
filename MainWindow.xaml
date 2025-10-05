@@ -12,16 +12,32 @@
             <ColumnDefinition />
             <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>    
-            <RowDefinition Height="30"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-            
-	</Grid>
+
+        <TextBlock Grid.Column="1" Grid.Row="0" Text="Введите числитель:"
+                   FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"  VerticalAlignment= "Center"/>
+        
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="0,0,50,0" 
+                 PreviewTextInput="TextBox_PreviewTextInput" 
+                 PreviewKeyDown="TextBox_PreviewKeyDown" 
+                 x:Name="numeratorTextBox"/>
+        
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Введите знаменатель:"
+                   FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"  VerticalAlignment= "Center"/>
+        <TextBox Grid.Column="1" Grid.Row="3" Margin="0,0,50,0" 
+                 PreviewTextInput="TextBox_PreviewTextInput" 
+                 PreviewKeyDown="TextBox_PreviewKeyDown" 
+                 x:Name="denominatorTextBox"/>
+
+    </Grid>
 </Window>
