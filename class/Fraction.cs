@@ -31,6 +31,17 @@ namespace L_R1._1_Khasanova
             Numerator = numerator;
             Denominator = denominator;
         }
+
+        //Функция-метод 1: Выразить значение дроби в процентах
+        public double ToPercentage()
+        {
+            return ((double)Numerator / Denominator) * 100;)
+         
+        }
+
+        //Функция-метод 2: Найти сумму цифр значения знаменателя
+
+
     }
 
-   
+    
