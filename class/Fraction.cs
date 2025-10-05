@@ -35,7 +35,7 @@ namespace L_R1._1_Khasanova
         //Функция-метод 1: Выразить значение дроби в процентах
         public double ToPercentage()
         {
-            return ((double)Numerator / Denominator) * 100;)
+            return ((double)Numerator / Denominator) * 100;
          
         }
 
@@ -53,12 +53,8 @@ namespace L_R1._1_Khasanova
             }
             return sum;
         }
-        
-        
-        
-                 
-        
-          
+
     }
+}
 
     
