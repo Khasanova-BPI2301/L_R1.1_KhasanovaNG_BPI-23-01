@@ -8,13 +8,18 @@ namespace L_R1._1_Khasanova
 {
     public class Fraction
     {
-        public int Numerator { get; set; }
-        public int Denominator { get; set; }
+        private int numerator;   // числитель
+        private int denominator; // знаменатель
 
-        public Fraction(int numerator, int denominator)
+        public int Numerator
         {
-            Numerator = numerator;
-            Denominator = denominator;
+            get { return numerator; }
+            set { numerator = value; }
         }
+        public int Denominator
+        { 
+            get { return denominator; }
+            set { denominator = value; }
+        }
+
     }
-}
