@@ -69,6 +69,10 @@ namespace L_R1._1_Khasanova
             }
 
         }
+
+        private void
     }
+
+    
 }
 
