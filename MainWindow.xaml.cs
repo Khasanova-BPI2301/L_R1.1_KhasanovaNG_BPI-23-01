@@ -21,7 +21,11 @@ namespace L_R1._1_Khasanova
         {
             InitializeComponent();
         }
-
+        public Fraction GetFraction
+        {
+            get ;
+            set ;  
+        }
         // Проверка ввода числа. обработчик
         private void TextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
