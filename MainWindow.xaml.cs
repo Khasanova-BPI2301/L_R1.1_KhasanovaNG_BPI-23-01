@@ -55,6 +55,13 @@ namespace L_R1._1_Khasanova
                 }
                 Fraction fraction = new Fraction(numerator, denominator);
 
+                // Проверяем, является ли дробь правильной
+                if (!fraction.IsFraction())
+                {
+                    resultTextBox.Text = "Ошибка: дробь неправильная!";
+                    return;
+                }
+
                 double percentage = fraction.ToPercentage();
                 resultTextBox.Text = $"{percentage:F2}%";
             }
@@ -70,43 +77,49 @@ namespace L_R1._1_Khasanova
             }
 
         }
-        //Обработчик для кнопки "найти сумму цифр знаменателя"
+        //Обработчик кнопки сумма цифр знаменателя
         private void CalculateSumDigits_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+               
                 int numerator = int.Parse(numeratorTextBox.Text);
-
                 int denominator = int.Parse(denominatorTextBox.Text);
-
+                
                 if (denominator == 0)
                 {
-                    resultTextBox.Text = "Ошибка: знаменатель не может быть равен нулю";
+                    resultTextBox.Text = "Ошибка: знаменатель не может быть равен нулю!";
                     return;
                 }
 
+                
                 Fraction fraction = new Fraction(numerator, denominator);
 
+                // Проверяем, является ли дробь правильной
+                if (!fraction.IsFraction())
+                {
+                    resultTextBox.Text = "Ошибка: дробь неправильная!";
+                    return;
+                }
+
+                
                 int sumDigits = fraction.SumOfDenominatorDigits();
 
-                resultTextBox.Text = $"Сумма цифр знаменателя:{sumDigits}";
+                
+                resultTextBox.Text = $"Сумма цифр знаменателя: {sumDigits}";
             }
             catch (FormatException)
             {
-
                 resultTextBox.Text = "Ошибка: введите корректные числа!";
             }
             catch (Exception ex)
             {
-                resultTextBox.Text = $"Ошибка:{ex.Message}";
+                resultTextBox.Text = $"Ошибка: {ex.Message}";
             }
-            {
-
-            }
-                }
+        }
 
 
-            }
+    }
 }
 
                 

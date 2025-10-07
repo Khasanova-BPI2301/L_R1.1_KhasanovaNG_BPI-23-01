@@ -32,6 +32,16 @@ namespace L_R1._1_Khasanova
             Denominator = denominator;
         }
 
+        // Метод проверки: является ли дробь правильной
+        public bool IsFraction()
+        {
+            // Правильная дробь: |числитель| < |знаменатель| и оба одного знака
+            if (denominator == 0) return false;
+
+            return Math.Abs(numerator) < Math.Abs(denominator) &&
+                   Math.Sign(numerator) == Math.Sign(denominator);
+        }
+
         //Функция-метод 1: Выразить значение дроби в процентах
         public double ToPercentage()
         {

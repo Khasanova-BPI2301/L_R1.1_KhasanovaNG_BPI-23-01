@@ -85,7 +85,7 @@ namespace L_R1._1_Khasanova {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/L_R1.1_Khasanova;V1.0.0.0;component/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/L_R1.1_Khasanova;component/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
