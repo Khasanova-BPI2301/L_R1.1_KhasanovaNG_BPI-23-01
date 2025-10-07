@@ -18,3 +18,4 @@ C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\obj\Debug
 C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\obj\Debug\net8.0-windows\L_R1.1_Khasanova.pdb
 C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\obj\Debug\net8.0-windows\L_R1.1_Khasanova.genruntimeconfig.cache
 C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\obj\Debug\net8.0-windows\ref\L_R1.1_Khasanova.dll
+C:\Users\Нургиза\source\repos\L_R1.1_Khasanova\L_R1.1_Khasanova\obj\Debug\net8.0-windows\L_R1.1_Khasanova.sourcelink.json

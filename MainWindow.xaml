@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:L_R1._1_Khasanova"
         mc:Ignorable="d"
-       Title="Правильная дробь" Height="450" Width="600">
+       Title="Правильная дробь" Height="450" Width="700">
 	<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30"/>
@@ -41,10 +41,10 @@
 
         <Button Grid.Column="1" Grid.Row="4" Content="Вычислить процентное значение" 
                 FontSize="20" FontWeight="Bold"
-                Click="CalculatePercentage_Click" Margin="30,10,30,10"/>
+                Click="CalculatePercentage_Click" Margin="70,10,70,10"/>
         <Button Grid.Column="1" Grid.Row="5" Content="Найти сумму цифр знаменателя" 
                 FontSize="20" FontWeight="Bold"
-                Click="CalculateSumDigits_Click" Margin="30,10,30,10"/>
+                Click="CalculateSumDigits_Click" Margin="70,10,70,10"/>
 
         <TextBlock Grid.Column="1" Grid.Row="6" Text="Результат:" 
                    FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"  VerticalAlignment= "Center" x:Name="resultLabel"/>

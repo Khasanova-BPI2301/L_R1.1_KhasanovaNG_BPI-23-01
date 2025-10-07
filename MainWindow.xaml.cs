@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Linq.Expressions;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -69,10 +70,55 @@ namespace L_R1._1_Khasanova
             }
 
         }
+        //Обработчик для кнопки "найти сумму цифр знаменателя"
+        private void CalculateSumDigits_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int numerator = int.Parse(numeratorTextBox.Text);
 
-        private void
-    }
+                int denominator = int.Parse(denominatorTextBox.Text);
+
+                if (denominator == 0)
+                {
+                    resultTextBox.Text = "Ошибка: знаменатель не может быть равен нулю";
+                    return;
+                }
+
+                Fraction fraction = new Fraction(numerator, denominator);
+
+                int sumDigits = fraction.SumOfDenominatorDigits();
+
+                resultTextBox.Text = $"Сумма цифр знаменателя:{sumDigits}";
+            }
+            catch (FormatException)
+            {
+
+                resultTextBox.Text = "Ошибка: введите корректные числа!";
+            }
+            catch (Exception ex)
+            {
+                resultTextBox.Text = $"Ошибка:{ex.Message}";
+            }
+            {
+
+            }
+                }
+
+
+            }
+}
+
+                
+
+
+
+            
+
+            
+        
+    
 
     
-}
+
 
