@@ -17,6 +17,8 @@ namespace L_R1._1_Khasanova
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int NumeratorValue { get; set; }
+        public int DenominatorValue { get; set; }
         public MainWindow()
         {
             InitializeComponent();
